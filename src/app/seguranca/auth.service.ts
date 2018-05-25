@@ -106,4 +106,5 @@ export class AuthService {
       this.armazenarToken(token);
     }
   }
+
 }
