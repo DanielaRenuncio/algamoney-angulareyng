@@ -65,4 +65,5 @@ export class MoneyHttp extends AuthHttp {
       return fn();
     }
   }
+
 }

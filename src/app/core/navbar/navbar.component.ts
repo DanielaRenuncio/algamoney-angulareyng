@@ -12,7 +12,7 @@ import { AuthService } from './../../seguranca/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
-  exibindoMenu= false;
+  exibindoMenu = false;
 
   constructor(
     public auth: AuthService,

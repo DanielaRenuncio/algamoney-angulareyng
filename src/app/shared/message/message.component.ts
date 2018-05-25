@@ -9,13 +9,13 @@ import { Component, OnInit, Input } from '@angular/core';
     </div>
   `,
   styles: [`
-     .ui-messages-error {
-       margin: 0;
-       margin-top: 4px;
-     }
-  ` ]
+    .ui-messages-error {
+      margin: 0;
+      margin-top: 4px;
+    }
+  `]
 })
-export class MessageComponent  {
+export class MessageComponent {
 
   @Input() error: string;
   @Input() control: FormControl;

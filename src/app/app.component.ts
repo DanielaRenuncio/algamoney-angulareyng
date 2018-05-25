@@ -1,5 +1,6 @@
-import { Router } from '@angular/router';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { ToastyConfig } from 'ng2-toasty';
 
 @Component({
@@ -13,7 +14,7 @@ export class AppComponent {
     private toastyConfig: ToastyConfig,
     private router: Router
   ) {
-     this.toastyConfig.theme = 'bootstrap';
+    this.toastyConfig.theme = 'bootstrap';
   }
 
   exibindoNavbar() {
