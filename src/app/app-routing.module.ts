@@ -1,4 +1,3 @@
-import { LancamentosModule } from './lancamentos/lancamentos.module';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -9,9 +8,11 @@ import { LancamentoCadastroComponent } from './lancamentos/lancamento-cadastro/l
 import { LancamentosPesquisaComponent } from './lancamentos/lancamentos-pesquisa/lancamentos-pesquisa.component';
 
 const routes: Routes = [
-  { path: 'lancamentos', loadChildren: 'app/lancamentos/lancamentos.module#LancamentosModule'},
-  { path: 'pessoas', loadChildren: 'app/pessoas/pessoas.module#PessoasModule'},
-  { path: '', redirectTo: 'lancamentos', pathMatch: 'full' },
+  { path: 'lancamentos', loadChildren: 'app/lancamentos/lancamentos.module#LancamentosModule' },
+  { path: 'pessoas', loadChildren: 'app/pessoas/pessoas.module#PessoasModule' },
+  { path: 'dashboard', loadChildren: 'app/dashboard/dashboard.module#DashboardModule'},
+
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'nao-autorizado', component: NaoAutorizadoComponent },
   { path: 'pagina-nao-encontrada', component: PaginaNaoEncontradaComponent },
   { path: '**', redirectTo: 'pagina-nao-encontrada' }
