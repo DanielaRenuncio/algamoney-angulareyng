@@ -1,5 +1,5 @@
 import { RouterModule } from '@angular/router';
-import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -12,7 +12,6 @@ import { TooltipModule } from 'primeng/tooltip';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
-
 
 import { LancamentosRoutingModule } from './lancamentos-routing.module';
 import { SharedModule } from './../shared/shared.module';
